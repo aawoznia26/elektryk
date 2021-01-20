@@ -8,7 +8,9 @@ const extractPlugin = new MiniCssExtractPlugin({
     filename: 'main.css'
 });
 
-const htmlPlugin = new HtmlWebpackPlugin();
+const htmlPlugin = new HtmlWebpackPlugin({
+  template: 'src/index.html'
+});
 const cleanPlugin = new CleanWebpackPlugin();
 
 const imageMinPlugin = new ImageMinimizerPlugin({
@@ -70,6 +72,23 @@ module.exports = {
             presets: [
               ['@babel/preset-env', { targets: "defaults" }]
             ]
+          }
+        }
+      },
+      {         
+        test: /\.html$/i,
+        use: {
+          loader: 'html-loader',
+        }
+      },
+      {
+        test: /\.(mov|mp4)$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[ext]",
+            outputPath: 'resources/',
+            publicPath: 'resources/',
           }
         }
       }

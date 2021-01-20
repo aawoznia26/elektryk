@@ -1,3 +1,51 @@
-.hello {
-    color: blue;
+body {
+    margin: 0px;
   }
+
+#header-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  padding: 20px;
+  text-align:center;
+}
+
+h1 {
+  font-size: 78px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+h1, h2 {
+  position: relative;
+  top: 25%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  font-family: 'Cabin', sans-serif;
+}
+
+#scroll-btn {
+  width: 200px;
+  font-size: 60px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
