@@ -60,8 +60,15 @@ module.exports = {
           ],
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        test: /\.(png|jpg|jpeg|gif)$/i,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "[name].[ext]",
+            outputPath: 'resources/',
+            publicPath: 'resources/',
+          }
+        }
       },
       {
         test: /\.m?js$/,
@@ -91,7 +98,11 @@ module.exports = {
             publicPath: 'resources/',
           }
         }
-      }
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
+        loader: 'url-loader',
+      },
     ],
   },
   plugins: [

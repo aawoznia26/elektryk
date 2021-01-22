@@ -1,44 +1,123 @@
+/* cabin-regular - latin-ext */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/cabin-v17-latin-ext-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/cabin-v17-latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/cabin-v17-latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/cabin-v17-latin-ext-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/cabin-v17-latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/cabin-v17-latin-ext-regular.svg#Cabin') format('svg'); /* Legacy iOS */
+}
+/* cabin-500 - latin-ext */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/cabin-v17-latin-ext-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/cabin-v17-latin-ext-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/cabin-v17-latin-ext-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/cabin-v17-latin-ext-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/cabin-v17-latin-ext-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/cabin-v17-latin-ext-500.svg#Cabin') format('svg'); /* Legacy iOS */
+}
+/* cabin-700 - latin-ext */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/cabin-v17-latin-ext-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/cabin-v17-latin-ext-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/cabin-v17-latin-ext-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/cabin-v17-latin-ext-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/cabin-v17-latin-ext-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/cabin-v17-latin-ext-700.svg#Cabin') format('svg'); /* Legacy iOS */
+}
+/* cabin-600 - latin-ext */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/cabin-v17-latin-ext-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/cabin-v17-latin-ext-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/cabin-v17-latin-ext-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/cabin-v17-latin-ext-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/cabin-v17-latin-ext-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/cabin-v17-latin-ext-600.svg#Cabin') format('svg'); /* Legacy iOS */
+}
+/* cabin-italic - latin-ext */
+@font-face {
+  font-family: 'Cabin';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/cabin-v17-latin-ext-italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/cabin-v17-latin-ext-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/cabin-v17-latin-ext-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/cabin-v17-latin-ext-italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/cabin-v17-latin-ext-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/cabin-v17-latin-ext-italic.svg#Cabin') format('svg'); /* Legacy iOS */
+}
+/* cabin-500italic - latin-ext */
+@font-face {
+  font-family: 'Cabin';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/cabin-v17-latin-ext-500italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/cabin-v17-latin-ext-500italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/cabin-v17-latin-ext-500italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/cabin-v17-latin-ext-500italic.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/cabin-v17-latin-ext-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/cabin-v17-latin-ext-500italic.svg#Cabin') format('svg'); /* Legacy iOS */
+}
+
+html, body {
+  height: 100%;
+}
+
 body {
     margin: 0px;
+    font-family: 'Cabin', sans-serif;
   }
 
 #header-video {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.content {
-  position: fixed;
-  bottom: 0;
+.header-content {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
-  width: calc(100% - 40px);
-  height: calc(100% - 40px);
-  padding: 20px;
-  text-align:center;
+  padding: 0 15%;
 }
 
 h1 {
-  font-size: 78px;
-  font-weight: 500;
-}
-
-h2 {
-  font-size: 32px;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-
-h1, h2 {
-  position: relative;
-  top: 25%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  font-family: 'Cabin', sans-serif;
+  color: white;
+  line-height: 1.2;
+  font-size: 3vw;
+  text-align: center;
+  span {
+    text-transform: uppercase;
+    display: block;
+    font-size: 7vw;
+    letter-spacing: -0.3vw;
+  }
 }
 
 #scroll-btn {
@@ -48,4 +127,34 @@ h1, h2 {
   background: #000;
   color: #fff;
   cursor: pointer;
+}
+
+main {
+  background: #04052e;
+  color: white;
+  position: relative;
+  padding: 3rem;
+  #instalations {
+    display: grid;
+    grid-template-columns: 40% 20% 40%;
+    grid-template-rows: auto;
+    h2 {
+      font-size: 45px;
+      text-align: left;
+    }
+    p {
+      font-size: 18px;
+      line-height: 36px;
+      margin-top: 36px;
+    }
+    #back-text{
+      p {
+        color: #140152;
+        font-size: 72px;
+        font-weight: 600;
+        display: block;
+        align-self: end;
+      }
+    }
+  }
 }
