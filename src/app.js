@@ -6,6 +6,7 @@ import image3 from '../resources/chandelier.png';
 import image4 from '../resources/socket.png';
 import image5 from '../resources/induction-stove.png';
 import image6 from '../resources/communications.png';
+import image7 from '../resources/combination.png';
 
 
 const headerText = 'Andrzej Woźniak';

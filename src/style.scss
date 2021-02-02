@@ -77,11 +77,16 @@
        url('../fonts/cabin-v17-latin-ext-500italic.svg#Cabin') format('svg'); /* Legacy iOS */
 }
 
-$dark-cold: #1a1a3e;
+$material-icons-font-path: '~material-icons/iconfont/';
+
+@import '~material-icons/iconfont/material-icons.scss';
+
+$dark-cold: #222251;
 $light-cold: #f0f8ff;
 $medium-cold: #43561e;
-$accent: #04052e;
+$accent: #140152;
 $black: rgba(20, 15, 35, 0.5);
+$light-warm: #91c8f5;
 
 %dark-3col-section {
   padding: 3rem;
@@ -250,7 +255,6 @@ main {
       }
       h3{
         font-size: 30px;
-        letter-spacing: 0.1em;
         margin-bottom: 0px;
         font-weight: 900;
       }
@@ -259,6 +263,45 @@ main {
         line-height: 30px;
         text-align: center;
       }
+    }
+  }
+
+  #contact {
+    background-color: $dark-cold;
+    color:  aliceblue;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 30% 40px 40% auto;
+    grid-template-rows: auto auto auto;
+
+    h3 {
+      color: $light-cold;
+      display: grid;
+      grid-area: 1 / 1 / 1 / 4;
+      font-size: 72px;
+      font-weight: 400;
+      margin: 12px 0px;
+    }
+    .address {
+      color: $light-warm;
+      margin-bottom: 36px;
+      span {
+        font-weight: 400;
+        font-size: 30px;
+      }
+    }
+    h4 {
+      font-weight: 400;
+      font-size: 36px;
+      margin: 0px;
+    }
+    p {
+      margin: 8px 0px;
+      color: $light-warm;
+    }
+    .icon-container {
+      padding-top: 10px;
+      color: $light-warm;
     }
   }
 }
