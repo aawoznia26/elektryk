@@ -6,7 +6,8 @@ import image3 from '../resources/chandelier.png';
 import image4 from '../resources/socket.png';
 import image5 from '../resources/induction-stove.png';
 import image6 from '../resources/communications.png';
-import image7 from '../resources/combination.png';
+import image7 from '../resources/screw.png';
+
 
 
 const headerText = 'Andrzej Woźniak';
@@ -28,3 +29,36 @@ h1.appendChild(subheader)
 const str = '. '
 document.getElementById("dotted1").innerHTML = str.repeat(627);
 document.getElementById("dotted2").innerHTML = str.repeat(627);
+
+const screw = document.getElementById("screw");
+const startScrew = document.getElementById("start-screw");
+const endScrew = document.getElementById("end-screw");
+const assembly = document.getElementById("assembly");
+const imgLeft = document.getElementById("img-left");
+let scroll = document.documentElement.scrollTop;
+
+window.onscroll = function () {
+    if (scroll > window.innerHeight && scroll < imgLeft.offsetTop) {
+        screw.style.visibility = "visible";
+        startScrew.style.visibility = "hidden";
+    } else if (scroll > imgLeft.offsetTop && scroll < assembly.of) {
+            screw.style.visibility = "visible";
+            startScrew.style.visibility = "hidden";
+            endScrew.style.visibility = "hidden";
+        } else {
+            screw.style.visibility = "hidden";
+            startScrew.style.visibility = "visible";
+            endScrew.style.visibility = "hidden";
+    }
+
+    // const animationStartPlace = assembly.offsetTop + (0.5 * window.innerHeight);
+    // const animationEndPlace = assembly.offsetTop + (0.7 * window.innerHeight);
+    
+
+    // if (animationStartPlace > document.documentElement.scrollTop) {
+    //     screw.style.animationName = "turn-left";
+    // } else {
+    //     screw.style.animationName = "turn-right";
+    // }
+
+}
