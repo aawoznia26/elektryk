@@ -7,6 +7,7 @@ import image4 from '../resources/socket.png';
 import image5 from '../resources/induction-stove.png';
 import image6 from '../resources/communications.png';
 import image7 from '../resources/screw.png';
+import image8 from '../resources/dots.png';
 
 
 
@@ -26,9 +27,9 @@ const subheader = document.createElement('span')
 subheader.innerText = subHeaderText + ' ' + yearsCounter + ' lat';
 h1.appendChild(subheader)
 
-const str = '. '
-document.getElementById("dotted1").innerHTML = str.repeat(627);
-document.getElementById("dotted2").innerHTML = str.repeat(627);
+// const str = '. '
+// document.getElementById("dotted1").innerHTML = str.repeat(627);
+// document.getElementById("dotted2").innerHTML = str.repeat(627);
 
 const screw = document.getElementById("screw");
 const startScrew = document.getElementById("start-screw");
@@ -51,14 +52,5 @@ window.onscroll = function () {
             endScrew.style.visibility = "hidden";
     }
 
-    // const animationStartPlace = assembly.offsetTop + (0.5 * window.innerHeight);
-    // const animationEndPlace = assembly.offsetTop + (0.7 * window.innerHeight);
-    
-
-    // if (animationStartPlace > document.documentElement.scrollTop) {
-    //     screw.style.animationName = "turn-left";
-    // } else {
-    //     screw.style.animationName = "turn-right";
-    // }
 
 }
