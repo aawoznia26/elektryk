@@ -5,7 +5,7 @@ import image2 from '../resources/naprawa.jpg'
 import image3 from '../resources/lampa.png'
 import image4 from '../resources/gniazdko.png'
 import image5 from '../resources/plyta-indukcyjna.png'
-import image6 from '../resources/wylacznik.png'
+import image6 from '../resources/odgromienie.png'
 import image7 from '../resources/dots.png'
 import image8 from '../resources/patern.png'
 
