@@ -16,10 +16,10 @@ const headerText = 'Andrzej Woźniak'
 const subHeaderText = 'Usługi elektryczne'
 
 const h1 = document.getElementsByTagName('h1')[0]
-h1.innerText = headerText;
+h1.innerText = headerText
 
 const subheader = document.createElement('span')
-subheader.innerText = subHeaderText;
+subheader.innerText = subHeaderText
 h1.appendChild(subheader)
 
 const carousel = document.createElement('span')

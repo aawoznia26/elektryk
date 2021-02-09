@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
+  "browserslist": "> 1%, not dead",
   "dependencies": {
     "material-icons": "^0.5.2",
     "webpack": "^5.15.0",
