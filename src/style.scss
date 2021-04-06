@@ -82,7 +82,7 @@
     transform:translate3d(0, 0, 0)
     }
     to {
-    transform:translate3d(-173%, 0, 0)
+    transform:translate3d(-98%, 0, 0)
     }
   }
 }
@@ -126,14 +126,6 @@ a {
   color: $light-cold;
   font-size: 12px;
   text-decoration: none;
-}
-
-.icon-source {
-  color: $dark-cold;
-  font-size: 12px;
-  a {
-    color: $dark-cold;
-  }
 }
 
 #header-video {
@@ -195,30 +187,46 @@ main {
 
   #carousel-text{
     color: $light-warm;
-    font-size: 15vw;
+    font-size: 8.5vw;
     font-weight: 700;
     overflow: hidden;
     span{
       white-space: nowrap;
       display: block;
       text-transform: uppercase;
-      animation: carousel-animation 18s linear infinite;
+      animation: carousel-animation 8s linear infinite;
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 768px) and (min-width: 521px){
     @keyframes carousel-animation {
       from {
        transform:translate3d(0, 0, 0)
       }
       to {
-       transform:translate3d(-250%, 0, 0)
+       transform:translate3d(-165%, 0, 0)
       }
      }
     #carousel-text{
-      font-size: 22vw;
+      font-size: 14vw;
       span{
-        animation: carousel-animation 14s linear infinite;
+        animation: carousel-animation 8s linear infinite;
+      }
+    }
+  }
+  @media (max-width: 520px) {
+    @keyframes carousel-animation {
+      from {
+       transform:translate3d(0, 0, 0)
+      }
+      to {
+       transform:translate3d(-167.5%, 0, 0)
+      }
+     }
+    #carousel-text{
+      font-size: 14vw;
+      span{
+        animation: carousel-animation 8s linear infinite;
       }
     }
   }
@@ -552,6 +560,11 @@ main {
         font-size: 8vw;
       }
     }
+  }
+
+  #grafic-resources{
+    padding: 0 5% 5% 5%;
+    font-size: 12px;
   }
   
 }
